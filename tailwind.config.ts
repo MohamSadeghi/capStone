@@ -8,11 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes : {
+        pulseScale :{
+          '0% , 100%' : {transform:'scale(1)'},
+          '50%' : {transform:'scale(1.3)'},
+        }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation : {
+          pulseScale : 'pulseScale linear 8s infinite',
+      }
     },
   },
   plugins: [],
