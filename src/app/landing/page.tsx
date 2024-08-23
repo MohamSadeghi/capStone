@@ -1,3 +1,4 @@
+import {Button} from "@/components/ui/button";
 
 
 export default function LandingPage() {
@@ -15,10 +16,12 @@ export default function LandingPage() {
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis
                     quibusdam non cum rem voluptatem!
                 </p>
-                <button
-                    className="bg-blue-500 px-24 py-2.5 text-white text-base font-normal rounded-full hover:scale-95 duration-300">Get
-                    Started
-                </button>
+                <Button
+                    className="bg-blue-500 px-24 py-2.5 text-white text-base font-normal rounded-full hover:scale-95 duration-300">
+                    <a href="/home">
+                        Get Started
+                    </a>
+                </Button>
             </div>
         </div>
     )
